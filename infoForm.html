@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pratice</title>
+</head>
+<body>
+  <h2>Form</h2>
+  <form onsubmit="handleSubmit()" action="/action_page.php">
+    <label for="fullName">Name</label>
+    <input type="text" name="fullName">
+    <br>
+    <label for="emailId">Email</label>
+    <input type="email" name="emailId">
+    <br>
+    <label for="phoneNum">Phone Number</label>
+    <input type="number" name="phoneNum">
+    <br>
+    <label>Gender</label>
+    <br>
+    <input type="radio" name="selectedGender" value="male" >
+    <label for="male">Male</label>
+    <input type="radio" name="selectedGender" value="female" >
+    <label for="female">Female</label>
+    <br>
+    <label>Country</label>
+    <br>
+    <input type="checkbox" name="selectedCountry" value="india">
+    <label>India</label>
+    <input type="checkbox" name="selectedCountry" value="nonIndia">
+    <label>Outside India</label>
+    <button>Submit</button>
+  </form>
+  <script>
+    function handleSubmit(){
+      alert(`${fullName}`)
+    }
+  </script>
+</body>
+</html>
